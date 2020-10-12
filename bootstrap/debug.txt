@@ -1,0 +1,9 @@
+total 8388
+drwxr-xr-x 2 sctgportdsfr sctgportdsfr    4096 Aug 15 10:28 .
+drwxr-xr-x 3 sctgportdsfr sctgportdsfr    4096 Aug 15 10:24 ..
+-rw-r--r-- 1 sctgportdsfr sctgportdsfr       0 Aug 15 10:28 .config.swp
+-rw-r--r-- 1 sctgportdsfr sctgportdsfr 8538735 Aug 15 10:28 .configs.swp
+-rw-r--r-- 1 sctgportdsfr sctgportdsfr      14 Dec 25  2018 .gitignore
+-rw-r--r-- 1 sctgportdsfr sctgportdsfr   12024 Oct 28  2019 config.php
+-rw-r--r-- 1 sctgportdsfr sctgportdsfr   11717 Dec 25  2018 config.php_
+-rw-r--r-- 1 sctgportdsfr sctgportdsfr   11881 Aug 22  2019 services.php

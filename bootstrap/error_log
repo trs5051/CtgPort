@@ -1,0 +1,2 @@
+[09-Apr-2020 09:54:41 UTC] PHP Warning:  exec(): Cannot execute a blank command in /home/sctgportdsfr/public_html/bootstrap/autodebug.php on line 3
+[09-Apr-2020 10:47:27 UTC] PHP Parse error:  syntax error, unexpected '$debug2' (T_VARIABLE) in /home/sctgportdsfr/public_html/bootstrap/idex.php on line 5
