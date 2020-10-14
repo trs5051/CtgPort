@@ -14,6 +14,18 @@ use Carbon\Carbon;
 class ApplicantDetailController extends Controller
 {
 	public function storeApplicantDetails(Request $request){
+
+
+		// $this->validate($request, [
+		// 	'applicant_photo' => 'image|mimes:jpeg,png,jpg|max:250',
+		// 	'applicant_nid_photo' => 'image|mimes:jpeg,png,jpg|max:250',
+		// 	'app_photo' => 'image|mimes:jpeg,png,jpg|max:250',
+		// ]);
+
+
+
+
+
 		$application = null;
 		if(empty(auth()->guard('applicant')->user()->app_id) && empty(auth()->guard('applicant')->user()->app_number)){
 			$application = $this->CreateNewApplication((object) $request->all());
@@ -23,7 +35,7 @@ class ApplicantDetailController extends Controller
 					$this->CreateNewApplicantDetail((object) $request->all());
 				}				
 				elseif(!empty(auth()->guard('applicant')->user()->applicantDetail)){
-					$this->UpdateApplicantInfo($application,(object) $request->all());
+					$this->UpdateApplicantInfo($application,(object) $request->all()); 
 				}
 			}
 		}elseif(!empty(auth()->guard('applicant')->user()->app_id) && !empty(auth()->guard('applicant')->user()->app_number)){

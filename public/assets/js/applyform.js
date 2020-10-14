@@ -40,6 +40,20 @@ $(document).ready(function() {
 });
  function readURL(input) {
    imgId = '#prev_'+ $(input).attr('id');
+
+   var file = input.files[0];
+var fileType = file["type"];
+var validImageTypes = ["image/jpg", "image/jpeg", "image/png"];
+
+if ($.inArray(fileType, validImageTypes) < 0) {
+  $(input).val('');  
+  $(imgId).attr('hidden',true);
+  $(input).siblings('div.err_msg').find('span').text('The file must be type of: jpg/jpeg/png');
+  $(input).siblings('div.err_msg').attr('hidden',false);
+}
+
+
+  
    if (input.files && (input.files[0].size / 1024 / 1024) < 0.25) {
     var reader = new FileReader();
     reader.onload = function (e) {
@@ -54,7 +68,7 @@ $(document).ready(function() {
   else{
     $(input).val('');  
     $(imgId).attr('hidden',true);
-    $(input).siblings('div.err_msg').find('span').text('File size exceeds 250 KB.Please reduce file size less than 250kb');
+    $(input).siblings('div.err_msg').find('span').text('File size exceeds 250 KB.Please make sure size less than 250 KB');
     $(input).siblings('div.err_msg').attr('hidden',false);
   }
 }

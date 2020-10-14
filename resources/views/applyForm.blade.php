@@ -15,7 +15,7 @@
                                            <option value="{{$sticker->value}}">{{ $sticker->name }}  </option>
                                         @endforeach
                                          </select>
-                                        @if ($errors->has('sticker_category_id'))
+                                        @if ($errors->has('sticker_category_id')) 
                                                 <span class="invalid-feedback">
                                                     <strong>{{ $errors->first('sticker_category') }}</strong>
                                                 </span>

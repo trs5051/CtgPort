@@ -338,8 +338,8 @@
                             <img src="{{url('')}}{{$app->app_photo}}" style="display: inline-block; height: auto;max-width:70%; width: auto; max-height: 200px; padding: 10px 0px;" id="prev_image3_e_exist" alt="preview application" >
                         </div>
                         <input type="file" id="image3_e_exist" name="app_photo" accept="image/*" class="form-control in-form mandatory" >
-                        <div id="err_msg_appcopy" class="err_msg" hidden> <i  class="fas fa-exclamation-triangle"></i> <span id="err_appcopy"> </span>
-                        </div>
+                        {{-- <div id="err_msg_appcopy" class="err_msg" hidden> <i  class="fas fa-exclamation-triangle"></i> <span id="err_appcopy"> </span></div> --}}
+                        <div id="err_msg_appcopy" class="err_msg" > <i  class="fas fa-exclamation-triangle"></i> <span id="err_appcopy"> </span></div>
                     </div>
                     <div class="col-md-2 offset-md-4">
                      <button type="submit" class="btn btn-primary custm-btn" id="E-n-btn1">Update & Save</button>
